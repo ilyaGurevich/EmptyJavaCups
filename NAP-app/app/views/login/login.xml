@@ -1,0 +1,23 @@
+<Page loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="English At Home"></ActionBar>
+    </Page.actionBar>
+    <ScrollView>
+        <StackLayout>
+            <Image src="~/images/logo.gif"></Image>
+
+            <Label cssClass="label" textWrap="true" text="If you are a teacher, please input the password." ></Label>
+            <TextField autocorrect="false" autocapitalizationType="none" cssClass="input text-lowercase" secure="true" text="{{ password }}" />
+
+            <Button text="Go!" tap="goHome"></Button>
+            
+            <Button text="Donate!" tap="donate"></Button>
+
+            <Button text="Terms of Use" tap="eula"></Button>
+
+            <Label textWrap="true" text="© 2016 Empty Java Cups. All rights reserved."></Label>
+
+            <Button text="About Empty Java Cups" tap="about"></Button>
+        </StackLayout>
+    </ScrollView>
+</Page>

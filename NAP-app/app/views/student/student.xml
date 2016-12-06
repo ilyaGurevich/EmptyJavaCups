@@ -1,0 +1,12 @@
+<Page loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Student"></ActionBar>
+    </Page.actionBar>
+    <StackLayout>
+        <Label textWrap="true" cssClass="studentName first" text="{{student.name}}" ></Label> 
+        <Label textWrap="true" cssClass="studentInfo" text="{{student.englishProficiency, 'English Proficiency: ' + student.englishProficiency}}"></Label> 
+        <Label textWrap="true" cssClass="studentInfo" text="{{student.nativeLanguage, 'Native Language: ' + student.nativeLanguage}}"></Label> 
+        <Label textWrap="true" cssClass="studentInfo" text="{{student.nationality, 'Nationality: ' + student.nationality}}"></Label> 
+        <Label textWrap="true" cssClass="studentInfo" text="{{student.units, 'Units Completed: ' + student.units}}"></Label> 
+    </StackLayout>
+</Page>

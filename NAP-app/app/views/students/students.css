@@ -1,0 +1,26 @@
+.studentLabel {
+    margin-left: 20;
+    color: black;
+}
+
+.home {
+    background-color: #4fa08b;
+    color: white;
+}
+
+.add {
+    background-color: #F7931E;
+    color: white;
+    margin-left: 60%;
+}
+
+.stackStudentLabel {
+    padding-bottom: 10;
+    padding-top: 10;
+}
+
+.buttonGrid {
+    border-bottom-width: 1;
+    border-bottom-color: gray;
+    border-style: solid;
+}

@@ -1,0 +1,21 @@
+<Page loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Students"></ActionBar>
+    </Page.actionBar>
+        <StackLayout>
+            <GridLayout cssClass="buttonGrid" columns="auto, auto" rows="auto, auto">
+<!--                 <Button cssClass="home" text="Home" tap="goHome" col="0" row="0"></Button> -->
+                <Button cssClass="add" text="Add &#43;" tap="add" col="1" row="0"></Button>
+            </GridLayout>
+            <GridLayout>
+                <ListView items="{{ students }}" itemTap="listViewItemTap">
+                    <ListView.itemTemplate>
+                        <StackLayout cssClass="stackStudentLabel">
+                            <Label cssClass="studentLabel" text="{{ name, 'Name: ' + name }}" horizontalAlignment="left" verticalAlignment="center"/>
+                            <Label cssClass="studentLabel" text="{{ units, 'Units Completed: ' + units }}" horizontalAlignment="left" verticalAlignment="center"/>
+                        </StackLayout>
+                    </ListView.itemTemplate>
+                </ListView>
+            </GridLayout>
+        </StackLayout>
+</Page>

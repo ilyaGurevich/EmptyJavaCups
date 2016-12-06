@@ -1,0 +1,23 @@
+<Page loaded="loaded">
+    <Page.actionBar >
+        <ActionBar title="Home"></ActionBar>
+    </Page.actionBar>
+    <ActivityIndicator busy="true" />
+    <StackLayout cssClass="mainStackLayout">
+        <ScrollView>
+            <StackLayout>
+            <Button cssClass="info" text="Help" tap="toHelp"></Button>
+            <Button cssClass="student" text="Students" tap="students" visibility="{{ password ? 'visible' : 'collapsed' }}"></Button>
+            <Button cssClass="verification" text="Monthly Verification Report" tap="goSubmit" visibility="{{ password ? 'visible' : 'collapsed' }}"></Button>
+            <Repeater items="{{units}}">
+                <Repeater.itemTemplate>
+                    <GridLayout columns="auto, auto" rows="auto, auto" >
+                        <Button text="{{value1, 'Unit ' + value1}}" id="{{value1}}" cssClass="unit" col="0" row="0" tap="goToUnit"/>
+                        <Button text="{{value2, 'Unit ' + value2}}" id="{{value2}}" visibility="{{ value2 ? 'visible' : 'collapsed' }}" cssClass="unit" col="1" row="0" tap="goToUnit"/>
+                    </GridLayout>
+                </Repeater.itemTemplate>
+            </Repeater>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</Page>

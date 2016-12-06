@@ -1,0 +1,46 @@
+<Page loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Submit Form"></ActionBar>
+    </Page.actionBar>
+    <ScrollView>
+        <StackLayout>
+<!--             <Button cssClass="back" text="Back" tap="goBack"></Button> -->
+            <Label cssClass="weeklyVerification" text="Monthly Verification"></Label>
+
+            <Label cssClass="labels" text="Teacher's Name"></Label>
+            <TextField cssClass="textInput" returnPress="doneTap" text="{{ teacherName }}" />
+
+            <Label cssClass="labels" text="Month"></Label>
+            <TextField cssClass="textInput" returnPress="doneTap" text="{{ month }}" />
+
+            <Label cssClass="labels" text="Student's Name"></Label>
+            <TextField cssClass="textInput" returnPress="doneTap" text="{{ studentName }}" />
+
+            <Label cssClass="labels" text="Total Number of Sessions"></Label>
+            <TextField cssClass="textInput" returnPress="doneTap" text="{{ sessionNumber }}" />
+
+            <Label cssClass="labels" text="Total Hours"></Label>
+            <TextField cssClass="textInput" returnPress="doneTap" text="{{ hours }}" />
+
+            <Label cssClass="labels" textWrap="true" text="Please briefly describe here the subjects that you and your student covered"></Label>
+            <TextField cssClass="textInput" returnPress="doneTap" text="{{ subjectsCovered }}" />
+
+            <Label cssClass="labels" textWrap="true" text="Has your student made progress? Please Explain"></Label>
+            <TextField cssClass="textInput" returnPress="doneTap" text="{{ progress }}" />
+
+            <Label cssClass="labels" textWrap="true" text="Is there anything the English At Home team can provide to make you more effective?"></Label>
+            <TextField cssClass="textInput" returnPress="doneTap" text="{{ englishAtHome }}" />
+
+            <Label cssClass="labels" textWrap="true" text="Miles Traveled"></Label>
+            <TextField cssClass="textInput" returnPress="doneTap" text="{{ milesTraveled }}" />
+
+            <Label cssClass="labels" text="Other Notes"></Label>
+            <TextField cssClass="textInput" returnPress="doneTap" text="{{ notes }}" />
+
+            <Label cssClass="labels" textWrap="true" text="Please give us feedback on the app! What do you think of the app? Is it helpful? Any suggestions are welcomed!"></Label>
+            <TextField cssClass="textInput" returnPress="doneTap" text="{{ feedback }}" />
+
+            <Button cssClass="submit" text="Submit" tap="submit"></Button>
+        </StackLayout>
+    </ScrollView>
+</Page>

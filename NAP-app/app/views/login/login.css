@@ -1,0 +1,26 @@
+StackLayout {
+  margin-left: 30;
+  margin-right: 30;
+  padding-bottom: 15;
+}
+
+Label {
+  font-size: 15;
+  margin-bottom: 30;
+  text-align: center;
+}
+
+Image {
+    margin-top: 30;
+}
+
+Button {
+    background-color: #62bea4;
+    color: white;
+}
+
+.input {
+    border-width: 1;
+    border-color: gray;
+    margin-bottom: 30;
+}

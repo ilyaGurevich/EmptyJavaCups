@@ -1,0 +1,8 @@
+<Page  xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Video"></ActionBar>
+    </Page.actionBar>
+    <StackLayout>
+        <WebView src="{{ url }}" height="250" />
+    </StackLayout>
+</Page>

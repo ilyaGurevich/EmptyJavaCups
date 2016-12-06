@@ -1,0 +1,12 @@
+<Page loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Unit"></ActionBar>
+    </Page.actionBar>
+    <ScrollView>
+        <StackLayout>
+            <Label cssClass="unitTitle" text="{{unit, 'Unit ' + unit}}" ></Label> 
+            <Button cssClass="unitCategory videos" text="Videos" tap="goVideo"></Button>
+            <Button cssClass="documents" textWrap="true" text="Documents and Images" tap="goDocs"></Button>
+        </StackLayout>
+    </ScrollView>
+</Page>

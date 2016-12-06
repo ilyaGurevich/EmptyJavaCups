@@ -1,0 +1,14 @@
+<Page loaded="loaded">
+    <Page.actionBar >
+        <ActionBar title="About Empty Java Cups"></ActionBar>
+    </Page.actionBar>
+    <ScrollView>
+        <StackLayout >
+            <Label cssClass="label" textWrap="true" text="Ilya Gurevich, Computer Science, Senior, Atlanta, GA"></Label>
+            <Label cssClass="label" textWrap="true" text="Jordan Goodall, Computational Media, Senior, McDonough, GA"></Label>
+            <Label cssClass="label" textWrap="true" text="Abby Collins, Computer Science, Senior, Savannah, GA"></Label>
+            <Label cssClass="label" textWrap="true" text="Elyes Graba, Physics and Computer Science, Senior, Atlanta, GA"></Label>
+            <Label cssClass="label" textWrap="true" text="McKenzie Elliott, Computational Media, Senior, New Orleans, LA"></Label>
+        </StackLayout>
+    </ScrollView>
+</Page>

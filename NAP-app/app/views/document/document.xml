@@ -1,0 +1,9 @@
+<Page loaded="loaded" xmlns:Gif="nativescript-gif"
+     xmlns:pdf="nativescript-pdf-view">
+    <Page.actionBar>
+        <ActionBar title="Document"></ActionBar>
+    </Page.actionBar>
+    <StackLayout>
+        <Image src="{{url}}"></Image>
+    </StackLayout>
+</Page>

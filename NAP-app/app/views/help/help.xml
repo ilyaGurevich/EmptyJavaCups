@@ -1,0 +1,10 @@
+<Page loaded="loaded">
+    <Page.actionBar >
+        <ActionBar title="Help"></ActionBar>
+    </Page.actionBar>
+    <ScrollView>
+        <StackLayout >
+            <Label cssClass="label" textWrap="true" text="English at Home app is a tool created to assist volunteers while teaching in the New American Pathways English at Home program. This app was developed to be an educational resource for the student and the teacher. The app includes important information about the languages and ethnicities of all of our clients. We have included photos to help with teaching/learning vocabulary and a series of hand motions to improve communication for early ELLs. We hope that this app will add value to the teaching/learning experience of our clients and volunteers." ></Label>
+        </StackLayout>
+    </ScrollView>
+</Page>

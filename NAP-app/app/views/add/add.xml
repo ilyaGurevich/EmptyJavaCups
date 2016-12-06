@@ -1,0 +1,25 @@
+<Page loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Add Student"></ActionBar>
+    </Page.actionBar>
+    <ScrollView>
+        <StackLayout>
+            <Label cssClass="label first" text="Name" ></Label>
+            <TextField cssClass="input" returnPress="doneTap" text="{{ name }}" />
+
+            <Label cssClass="label" text="English Proficiency" ></Label>
+            <TextField cssClass="input" returnPress="doneTap" text="{{ proficiency }}" />
+
+            <Label cssClass="label" text="Native Language" ></Label>
+            <TextField cssClass="input" returnPress="doneTap" text="{{ language }}" />
+
+            <Label cssClass="label" text="Nationality" ></Label>
+            <TextField cssClass="input" returnPress="doneTap" text="{{ nationality }}" />
+
+            <Label cssClass="label" text="Units Completed" ></Label>
+            <TextField keyboardType="number" returnPress="doneTap" cssClass="input" text="{{ units }}" />
+
+            <Button cssClass="submit" text="Submit" tap="submit"></Button>
+        </StackLayout>
+    </ScrollView>
+</Page>

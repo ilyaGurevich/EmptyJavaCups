@@ -1,0 +1,14 @@
+<Page loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Videos"></ActionBar>
+    </Page.actionBar>
+        <StackLayout>
+            <GridLayout>
+                <ListView items="{{ videos }}" itemTap="listViewItemTap">
+                    <ListView.itemTemplate>
+                        <Label cssClass="videoLabel" text="{{ title }}" horizontalAlignment="left" verticalAlignment="center"/>
+                    </ListView.itemTemplate>
+                </ListView>
+            </GridLayout>
+        </StackLayout>
+</Page>

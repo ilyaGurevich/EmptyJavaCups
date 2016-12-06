@@ -1,0 +1,17 @@
+StackLayout {
+    margin-left: 30;
+    margin-right: 30;
+    margin-top: 30;
+}
+
+.label {
+    color: black;
+    font-size: 10;
+}
+
+.title {
+    margin-top: 30;
+    margin-bottom: 30;
+    color: black;
+    font-size: 30;
+}

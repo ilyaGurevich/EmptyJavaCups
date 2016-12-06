@@ -1,0 +1,27 @@
+.back {
+    background-color: #4fa08b;
+    color: white;
+    width: 100;
+    margin-right: 300;
+}
+
+.studentInfo {
+    text-align: left;
+    font-size: 20;
+    margin-left: 20%;
+    color: black;
+    margin-bottom: 20;
+}
+
+.submit {
+    background-color: #F7931E;
+    color: white;
+}
+
+.studentName {
+    color: #2e363a;
+    font-size: 30;
+    text-align: center;
+    margin-bottom: 20;
+    margin-top: 10%;
+}

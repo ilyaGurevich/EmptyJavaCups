@@ -1,0 +1,14 @@
+<Page loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Documents and Images"></ActionBar>
+    </Page.actionBar>
+        <StackLayout>
+            <GridLayout>
+                <ListView items="{{ documents }}" itemTap="listViewItemTap">
+                    <ListView.itemTemplate>
+                        <Label cssClass="documentLabel" text="{{ title }}" horizontalAlignment="left" verticalAlignment="center"/>
+                    </ListView.itemTemplate>
+                </ListView>
+            </GridLayout>
+        </StackLayout>
+</Page>

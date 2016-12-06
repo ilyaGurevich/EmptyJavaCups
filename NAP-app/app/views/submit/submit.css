@@ -1,0 +1,38 @@
+.back {
+    background-color: #4fa08b;
+    color: white;
+    width: 100;
+    margin-right: 300;
+}
+
+.weeklyVerification {
+    color: #2e363a;
+    font-size: 30;
+    text-align: center;
+    margin-bottom: 20
+    margin-top: 20;
+}
+
+.labels {
+    color: black;
+    margin-left: 20;
+}
+
+.textInput {
+    border-width: 1;
+    border-color: gray;
+    margin-left: 20;
+    margin-right: 20;
+    margin-bottom: 20;
+    border-radius: 10px;
+}
+
+.submit {
+    background-color: #F0483E;
+    color: white;
+    width: 50%;
+}
+
+StackLayout {
+    margin-bottom: 300;
+}

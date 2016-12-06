@@ -1,0 +1,47 @@
+Label {
+    color: #2e363a;
+    font-size: 20;
+    text-align: center;
+}
+
+SearchBar {
+    color: #2e363a;
+    font-size: 15;
+}
+
+.mainStackLayout {
+    padding-bottom: 15;
+}
+
+.info {
+    background-color: green;
+    color: white;
+    width: 50%;
+}
+
+.verification {
+    background-color: #F7931E;
+    color: white;
+}
+
+.unit {
+    background-color: #4fa08b;
+    color: white;
+    width: 100;
+    height: 100;
+}
+
+.student {
+    background-color: #F0483E;
+    color: white;
+    width: 50%;
+}
+
+GridLayout {
+    margin-top: 10;
+    margin-left: 22%;
+}
+
+.hidden {
+    visibility: collapsed;
+}
