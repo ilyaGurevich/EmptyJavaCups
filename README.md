@@ -11,7 +11,6 @@ An app, available in both iOS and Android platforms, that provides accessible an
 ## Install Guide
 
 * Pre-requisites: Must have Android or iOS smartphone. Applications located on their respective stores under the title of "English At Home". For Android consider searching "New American Pathways".
-* Download instructions: www.github.gatech.edu/egraba3/EmptyJavaCup repository will have source code available for Android, iOS, and Web Application. 
 * Website link for uploading content: http://www.prism.gatech.edu/~igurevich3/newAmericanPathways/
 * Run instructions: Download Application from Google Play Store or iOS store - tap on icon to run.
 * Troubleshooting: Some images may take some time to load on the application due to their size. Cannot add a student on android version
