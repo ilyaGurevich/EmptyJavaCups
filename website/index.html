@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New American Pathways Login Portal</title>
+    <link rel="stylesheet" type="text/css" href="fileUploader.css">
+    <script type="text/javascript" src="fileUploader.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDmCB3m9qlfGzFwQsjGoS51qnvjN0Bu0yQ",
+        authDomain: "napapp-65271.firebaseapp.com",
+        databaseURL: "https://napapp-65271.firebaseio.com",
+        storageBucket: "napapp-65271.appspot.com",
+        messagingSenderId: "40236035875"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script>
+        function validateLogin() {
+            var password = document.getElementById("password").value;
+            var el = new Everlive('vp5xxkeb34dhj029');
+
+            el.authentication.login(password, // username
+                password) // password
+            .then(function(data) {
+                window.location = "main.html";
+            })
+            .catch(function(error) {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                alert("Wrong password or email!");
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+<div>
+    <a href="http://newamericanpathways.org/"><img class="ejc-FilePicker-image" src="logo.gif"></a>
+    <div class="ejc-FilePicker-inputGroup">
+        <label class="ejc-FilePicker-inputGroup-label">Password</label>
+        <input id="password" class="ejc-FilePicker-inputGroup-text" type="password">
+        <button class="ejc-FilePicker-button" onclick="validateLogin()">Login</button>
+    </div>
+
+</div>
+
+
+</body>
+</html>

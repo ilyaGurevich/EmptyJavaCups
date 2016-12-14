@@ -1,0 +1,167 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New American Pathways Upload Portal</title>
+    <link rel="stylesheet" type="text/css" href="delete.css">
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
+    <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
+</head>
+
+
+<body>
+    <div class="divDelete" id="documents">
+        Documents
+    </div>
+    <div class="divDelete" id="videos">
+        Videos
+    </div>
+    <div class="divDelete" id="students"> 
+        Students
+    </div>
+
+    <script>
+        function loadItems() {
+            var el = new Everlive('vp5xxkeb34dhj029');
+            var documents = el.data('documents');
+            var videos = el.data('videos');
+            var students = el.data('students');
+            var query = new Everlive.Query();
+            query.where().ne('type', 'video');
+            documents.get(query)
+                .then(function(data) {
+                    var value = data.result;
+                    var element = document.getElementById('documents')
+
+                    for (var i = 0; i < value.length; i++) {
+                        var div = document.createElement('div');
+                        div.className = "deleteItem";
+                        var info = document.createElement('div');
+                        info.textContent = "Name: " + value[i].name;
+                        var unit = document.createElement('div');
+                        unit.textContent = "Unit: " + value[i].unit;
+                        div.appendChild(info);
+                        div.appendChild(unit);
+
+                        var a = document.createElement('a');
+                        a.href = value[i].url;
+                        a.textContent = "Link to File Here";
+                        div.appendChild(a);
+
+                        var deleteButton = document.createElement('button');
+                        deleteButton.id = value[i].Id;
+                        deleteButton.textContent = "Delete Here!";
+                        deleteButton.addEventListener('click', function(args) {
+                            documents.destroySingle({ Id: args.target.id},
+                                function(){
+                                    alert('Item successfully deleted.');
+                                    location.reload();
+                                },
+                                function(error){
+                                    alert(JSON.stringify(error));
+                                });
+                        });
+                        div.appendChild(deleteButton);
+                        element.appendChild(div);
+                    }
+                })
+
+            videos.get()
+                .then(function(data) {
+                    var value = data.result;
+                    var element = document.getElementById('videos')
+
+                    for (var i = 0; i < value.length; i++) {
+                        var div = document.createElement('div');
+                        div.className = "deleteItem";
+                        var info = document.createElement('div');
+                        info.textContent = "Name: " + value[i].name;
+                        var unit = document.createElement('div');
+                        unit.textContent = "Unit: " + value[i].unit;
+                        div.appendChild(info);
+                        div.appendChild(unit);
+
+                        var a = document.createElement('a');
+                        a.href = value[i].url;
+                        a.textContent = "Link to Video Here";
+                        div.appendChild(a);
+
+                        var deleteButton = document.createElement('button');
+                        deleteButton.id = value[i].Id;
+                        deleteButton.className = value[i].url;
+                        deleteButton.textContent = "Delete Here!";
+                        deleteButton.addEventListener('click', function(args) {
+                            videos.destroySingle({ Id: args.target.id},
+                                function(){
+                                },
+                                function(error){
+                                    alert(JSON.stringify(error));
+                                });
+                            documents.destroy({ url: args.target.className},
+                                function(){
+                                    alert('Item successfully deleted.');
+                                    location.reload();
+                                },
+                                function(error){
+                                    alert(JSON.stringify(error));
+                                });
+                        });
+                        div.appendChild(deleteButton);
+                        element.appendChild(div);
+                    }
+                })
+
+            students.get()
+                .then(function(data) {
+                    var value = data.result;
+
+                    var value = data.result;
+                    var element = document.getElementById('students')
+
+                    for (var i = 0; i < value.length; i++) {
+                        var div = document.createElement('div');
+                        div.className = "deleteItem";
+                        var info = document.createElement('div');
+                        info.textContent = "Name: " + value[i].name;
+
+                        var nativeLanguage = document.createElement('div');
+                        nativeLanguage.textContent = "nativeLanguage: " + value[i].nativeLanguage;
+
+                        var proficiency = document.createElement('div');
+                        proficiency.textContent = "Proficiency: " + value[i].proficiency;
+
+                        var nationality = document.createElement('div');
+                        nationality.textContent = "Nationality: " + value[i].nationality;
+
+                        var unit = document.createElement('div');
+                        unit.textContent = "Units Completed: " + value[i].unit;
+
+                        div.appendChild(info);
+                        div.appendChild(nativeLanguage);
+                        div.appendChild(proficiency);
+                        div.appendChild(nationality);
+                        div.appendChild(unit);
+
+                        var deleteButton = document.createElement('button');
+                        deleteButton.id = value[i].Id;
+                        deleteButton.textContent = "Delete Here!";
+                        deleteButton.addEventListener('click', function(args) {
+                            students.destroySingle({ Id: args.target.id},
+                                function(){
+                                    alert('Item successfully deleted.');
+                                    location.reload();
+                                },
+                                function(error){
+                                    alert(JSON.stringify(error));
+                                });
+                        });
+                        div.appendChild(deleteButton);
+                        element.appendChild(div);
+                    }
+                })
+        }
+        loadItems();
+    </script>
+
+</body>
+</html>

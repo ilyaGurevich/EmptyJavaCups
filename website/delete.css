@@ -1,0 +1,10 @@
+.divDelete {
+    font-size: 30px;
+}
+
+.deleteItem {
+    font-size: 15px;
+    border: 1px solid gray;
+    margin: 1% 0 1% 4%;
+    padding: 10px;
+}

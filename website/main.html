@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New American Pathways Upload Portal</title>
+    <link rel="stylesheet" type="text/css" href="fileUploader.css">
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDmCB3m9qlfGzFwQsjGoS51qnvjN0Bu0yQ",
+        authDomain: "napapp-65271.firebaseapp.com",
+        databaseURL: "https://napapp-65271.firebaseio.com",
+        storageBucket: "napapp-65271.appspot.com",
+        messagingSenderId: "40236035875"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
+    <script type="text/javascript" src="fileUploader.js"></script>
+</head>
+
+
+<body>
+
+<div>
+    <a href="http://newamericanpathways.org/"><img class="ejc-FilePicker-image" src="logo.gif"></a>
+    <div class="ejc-FilePicker-container">
+        <a href="delete.html">
+            <button class="ejc-FilePicker-button">Click Here to Delete Files</button>
+        </a>
+    </div>
+    <div class="ejc-FilePicker-title">
+        Upload Your Documents Here!
+    </div>
+    <div class="ejc-FilePicker-inputGroup">
+        <label class="ejc-FilePicker-inputGroup-label">Unit Number</label>
+        <input id="filestack-unit" class="ejc-FilePicker-inputGroup-text" type="number">
+        <label class="ejc-FilePicker-inputGroup-label">File Name</label>
+        <input id="filestack-name" class="ejc-FilePicker-inputGroup-text" type="text">
+        <label class="ejc-FilePicker-inputGroup-label">File Type</label>
+        <select id="filestack-type">
+          <option value="image">Image</option>
+          <option value="gif">GIF</option>
+        </select>
+    </div>
+    <div class="ejc-FilePicker-container">
+        <button id="filestack-upload-button" class="ejc-FilePicker-button">Upload</button>
+    </div>
+    <div class="ejc-FilePicker-title">
+        Upload Your Youtube Video Links Here!
+    </div>
+    <div class="ejc-FilePicker-inputGroup">
+        <label class="ejc-FilePicker-inputGroup-label">Unit Number</label>
+        <input id="youtube-unit" class="ejc-FilePicker-inputGroup-text" type="number">
+        <label class="ejc-FilePicker-inputGroup-label">Video Title</label>
+        <input id="youtube-name" class="ejc-FilePicker-inputGroup-text" type="text">
+        <label class="ejc-FilePicker-inputGroup-label">Youtube URL</label>
+        <input id="youtube-url" class="ejc-FilePicker-inputGroup-text" type="text">
+    </div>
+    <div class="ejc-FilePicker-container">
+        <button id="youtube-upload-button" class="ejc-FilePicker-button">Upload Youtube Video</button>
+    </div>
+    <div class="ejc-FilePicker-title">
+        Add a Student Here!
+    </div>
+    <div class="ejc-FilePicker-inputGroup">
+        <label class="ejc-FilePicker-inputGroup-label">Student Name</label>
+        <input id="student-name" class="ejc-FilePicker-inputGroup-text" type="text">
+        <label class="ejc-FilePicker-inputGroup-label">English Proficiency</label>
+        <input id="student-proficiency" class="ejc-FilePicker-inputGroup-text" type="text">
+        <label class="ejc-FilePicker-inputGroup-label">Native Language</label>
+        <input id="student-nativeLanguage" class="ejc-FilePicker-inputGroup-text" type="text">
+        <label class="ejc-FilePicker-inputGroup-label">Nationality</label>
+        <input id="student-nationality" class="ejc-FilePicker-inputGroup-text" type="text">
+        <label class="ejc-FilePicker-inputGroup-label">Units Completed</label>
+        <input id="student-unit" class="ejc-FilePicker-inputGroup-text" type="number">
+    </div>
+    <div class="ejc-FilePicker-container">
+        <button id="student-upload-button" class="ejc-FilePicker-button">Add Student</button>
+    </div>
+</div>
+
+
+</body>
+</html>

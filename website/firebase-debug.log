@@ -1,0 +1,28 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      node /Users/igurevich/.nvm/versions/node/v0.12.14/bin/firebase serve
+[debug] CLI Version:  3.2.0
+[debug] Platform:     darwin
+[debug] Node Version: v0.12.14
+[debug] Time:         Mon Nov 28 2016 20:08:21 GMT-0500 (EST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /Users/igurevich/projects/EmptyJavaCup/website
+[info] Public Directory: ./
+[info] 
+[info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      node /Users/igurevich/.nvm/versions/node/v0.12.14/bin/firebase serve
+[debug] CLI Version:  3.2.0
+[debug] Platform:     darwin
+[debug] Node Version: v0.12.14
+[debug] Time:         Sun Dec 04 2016 14:45:16 GMT-0500 (EST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /Users/igurevich/projects/EmptyJavaCup/website
+[info] Public Directory: ./
+[info] 
+[info] Server listening at: http://localhost:5000
